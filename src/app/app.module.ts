@@ -2,19 +2,24 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { MenuComponent } from './menu/menu.component';
-import { UserComponent } from './user/user.component';
-import { RegisterComponent } from './register/register.component';
+import { IndexComponent } from './index/index.component';
+import { EuropaComponent } from './europa/europa.component';
+import { ReszletesAdatokComponent } from './reszletes-adatok/reszletes-adatok.component';
+import { VilaggazdasagComponent } from './vilaggazdasag/vilaggazdasag.component';
+import { RouterModule } from '@angular/router';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MenuComponent,
-    UserComponent,
-    RegisterComponent
+    IndexComponent,
+    EuropaComponent,
+    ReszletesAdatokComponent,
+    VilaggazdasagComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
